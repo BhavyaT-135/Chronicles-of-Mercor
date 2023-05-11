@@ -1,9 +1,10 @@
 import './app.css'
+import Header from './components/Header/Header'
 
 function App() {
   return (
     <div className="App">
-      <h1 style={{color: "white"}}>Hello World</h1>
+      <Header />
     </div>
   );
 }
