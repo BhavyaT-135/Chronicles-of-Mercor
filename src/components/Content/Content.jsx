@@ -10,7 +10,7 @@ const Content = () => {
     const handleScroll = () => {
       const contentText = contentRef.current.querySelector('.content-text');
       const words = contentText.textContent.split(' ');
-      const colorIndex = Math.floor(scrollYProgress.get() * colors.length* 20);
+      const colorIndex = Math.floor(scrollYProgress.get() * colors.length* 20 );
 
       contentText.innerHTML = words
         .map((word, index) => {

@@ -1,0 +1,64 @@
+.workflow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 0 40px;
+  margin-top: 200px;
+}
+
+.workflow__left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.workflow__right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.workflow__left-content {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: 60%;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.workflow__left-heading {
+  font-size: 30px;
+  line-height: 44px;
+  font-weight: 400;
+  color: #a594fd;
+  font-family: 'Poppins', sans-serif;
+}
+
+.workflow__left-title {
+  font-size: 80px;
+  line-height: 84px;
+  font-weight: 600;
+  margin-top: 15px;
+  text-align: left;
+  white-space: pre-wrap;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.workflow__left-text {
+  font-size: 16px;
+  text-align: left;
+  margin-top: 25px;
+  white-space: pre-wrap;
+  color: #808080;
+  font-family: 'Poppins', sans-serif;
+}
