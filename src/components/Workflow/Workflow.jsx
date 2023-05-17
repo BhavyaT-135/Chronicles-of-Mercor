@@ -14,8 +14,8 @@ const Workflow = () => {
         </div>
       </div>
       <div className='workflow__right'>
-        {/* <Assistant /> */}
-        <Bullets />
+        <Assistant />
+        {/* <Bullets /> */}
       </div>
     </div>
   )
