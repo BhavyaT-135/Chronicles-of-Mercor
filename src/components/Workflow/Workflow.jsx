@@ -1,5 +1,6 @@
 import React from 'react'
 import './workflow.css'
+import Assistant from '../Assistant/Assistant'
 
 const Workflow = () => {
   return (
@@ -12,6 +13,7 @@ const Workflow = () => {
         </div>
       </div>
       <div className='workflow__right'>
+        <Assistant />
       </div>
     </div>
   )

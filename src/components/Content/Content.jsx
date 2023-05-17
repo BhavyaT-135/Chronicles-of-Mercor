@@ -25,7 +25,7 @@ const Content = () => {
     return () => {
       scrollYProgress.clearListeners();
     };
-  }, []);
+  });
 
   const colors = ['#808080', '#A0A0A0', '#C0C0C0', '#E0E0E0', '#FFFFFF'];
 
