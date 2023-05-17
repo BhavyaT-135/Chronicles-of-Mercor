@@ -6,6 +6,7 @@ import food from '../../assets/food.jpg'
 import beverages from '../../assets/beverages.jpg'
 import travel from '../../assets/travel.jpg'
 import rotate from '../../assets/rotate.jpg'
+import cursor from '../../assets/cursor.png'
 
 const Bullets = () => {
 
@@ -40,8 +41,16 @@ const Bullets = () => {
         </div>)}
         {counter === 2 &&(<img src={expenses} alt='expenses' className='bullets__top-expenses scale-up-center' />)}
         {counter === 3 && (<img src={expenses2} alt='expenses' className='bullets__top-expenses scale-up-center' />)}
-        {rotateCounter === 1 && (<img src={rotate} alt='rotate' className='bullets__top-rotate rotate-scale-down' />)}
-        {rotateCounter === 2 && (<img src={rotate} alt='rotate' className='bullets__top-rotate rotate-scale-down' />)}
+        <div className='bullets__top-rotateDiv'>
+          <div>
+            {rotateCounter === 1 && (<img src={rotate} alt='rotate' className='bullets__top-rotate rotate-scale-down' />)}
+            {rotateCounter === 2 && (<img src={rotate} alt='rotate' className='bullets__top-rotate rotate-scale-down' />)}
+          </div>
+          <div>
+            {rotateCounter === 1 && (<img src={cursor} alt='rotate' className='bullets__top-jessica scale-up-center' />)}
+            {rotateCounter === 2 && (<img src={cursor} alt='rotate' className='bullets__top-jessica scale-up-center' />)}
+          </div>
+        </div>
       </div>
       <div className='bullets__bottom'>
         <div className='bullets__bottom-heading'>
