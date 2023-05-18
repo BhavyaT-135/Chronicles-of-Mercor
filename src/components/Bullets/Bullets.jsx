@@ -32,7 +32,7 @@ const Bullets = () => {
   }, []);
 
   return (
-    <div className='bullets'>
+    <div className='bullets scale-up-center'>
       <div className='bullets__top'>
         {counter === 1 && (<div className='bullets__top-images scale-up-center'>
           <img src={food} alt='food' className='bullets__top-img' />

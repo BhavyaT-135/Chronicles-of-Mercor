@@ -26,6 +26,36 @@
   height: 100%;
 }
 
+.workflow__right-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: fit-content;
+  width: 70%;
+  margin-right: 20%;
+  margin-top: 20px;
+}
+
+.workflow__right-buttons__button {
+  width: 45%;
+  height: 100%;
+  background-color: white;
+  text-align: center;
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 800;
+  border: none;
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+
+.button__gray {
+  background-color: #101010 !important;
+  color: #404040 !important;
+}
+
 .workflow__left-content {
   display: flex;
   flex-direction: column;
@@ -61,4 +91,33 @@
   white-space: pre-wrap;
   color: #808080;
   font-family: 'Poppins', sans-serif;
+}
+
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }

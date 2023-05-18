@@ -20,7 +20,7 @@ const Keyboard = () => {
   }, []);
 
   return (
-    <div className='keyboard'>
+    <div className='keyboard scale-up-center'>
       <div className='keyboard__blocks'>
         <div className='keyboard__blocks-container'>
           <div className='keyboard__blocks__block'></div>

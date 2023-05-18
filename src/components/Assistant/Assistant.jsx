@@ -4,7 +4,7 @@ import assistant from '../../assets/assistant.jpg'
 
 const Assistant = () => {
   return (
-    <div className='assistant'>
+    <div className='assistant scale-up-center'>
       <div className='assistant__top'>
         <img src={assistant} alt='assistant' />
       </div>
