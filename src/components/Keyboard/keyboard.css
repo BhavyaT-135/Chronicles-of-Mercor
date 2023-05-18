@@ -26,8 +26,8 @@
 }
 
 .keyboard__top-block__heading {
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 12px;
+  line-height: 14px;
   font-weight: 400;
   color: #808080;
   font-family: 'Poppins', sans-serif;
@@ -52,7 +52,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 50%;
+  width: 55%;
   margin-left: 20%;
 }
 
@@ -60,13 +60,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 65px;
-  width: 65px;
+  height: 60px;
+  width: 60px;
   background-color: #c6c6c2;
   border: none;
-  border-radius: 10px;
+  border-radius: 15px;
   margin-top: 5%;
-  color: #3c3c3b;
+  color: #2b2b2a;
   font-size: 26px;
   line-height: 30px;
   font-weight: 600;
@@ -77,15 +77,15 @@
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  height: 65px;
-  width: 130px;
+  height: 60px;
+  width: 120px;
   background-color: #c6c6c2;
   border: none;
-  border-radius: 10px;
+  border-radius: 15px;
   margin-top: 5%;
-  color: #3c3c3b;
-  font-size: 26px;
-  line-height: 30px;
+  color: #2b2b2a;
+  font-size: 16px;
+  line-height: 22px;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
 }
@@ -99,12 +99,12 @@
 }
 
 .keyboard__bottom-heading {
-  width: 57%;
+  width: 63%;
   text-align: center;
   margin-top: 5%;
-  font-size: 40px;
-  line-height: 40px;
-  font-weight: 600;
+  font-size: 36px;
+  line-height: 38px;
+  font-weight: 500;
   color: white;
   font-family: 'Poppins', sans-serif;
 }
@@ -113,8 +113,8 @@
   width: 80%;
   text-align: center;
   margin-top: 5%;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 20px;
+  line-height: 26px;
   font-weight: 400;
   color: #808080;
   font-family: 'Poppins', sans-serif;

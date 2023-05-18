@@ -36,16 +36,16 @@
 }
 
 .workflow__left-heading {
-  font-size: 30px;
-  line-height: 44px;
+  font-size: 28px;
+  line-height: 36px;
   font-weight: 400;
   color: #a594fd;
   font-family: 'Poppins', sans-serif;
 }
 
 .workflow__left-title {
-  font-size: 80px;
-  line-height: 84px;
+  font-size: 75px;
+  line-height: 80px;
   font-weight: 600;
   margin-top: 15px;
   text-align: left;
@@ -55,7 +55,7 @@
 }
 
 .workflow__left-text {
-  font-size: 16px;
+  font-size: 14px;
   text-align: left;
   margin-top: 25px;
   white-space: pre-wrap;

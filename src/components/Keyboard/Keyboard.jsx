@@ -28,14 +28,14 @@ const Keyboard = () => {
   return (
     <div className='keyboard'>
       <div className='keyboard__top'>
-        {/* (<div className='keyboard__top-block'>
+        (<div className='keyboard__top-block'>
           <div className='keyboard__top-block__heading scale-up-top'>
             Create a new block
           </div>
           <div className='keyboard__top-block__square scale-up-center'>
             /
           </div>
-        </div>) */}
+        </div>)
         {/* (<div className='keyboard__top-block'>
           <div className='keyboard__top-block__heading scale-up-top'>
             Select your blocks
@@ -55,7 +55,7 @@ const Keyboard = () => {
             </div>
           </div>
         </div>) */}
-        <div className='keyboard__top-block'>
+        {/* (<div className='keyboard__top-block'>
           <div className='keyboard__top-block__heading scale-up-top'>
             Tidy up and organize all blocks
           </div>
@@ -70,11 +70,11 @@ const Keyboard = () => {
               T
             </div>
           </div>
-        </div>
+        </div>) */}
       </div>
       <div className='keyboard__bottom'>
         <div className='keyboard__bottom-heading'>
-          A keyboard first experience
+          A keyboard first experience.
         </div>
         <div className='keyboard__bottom-text'>
           Powerful shortcuts and a keyboard-first workflow means you will get to your finish line in no time!
