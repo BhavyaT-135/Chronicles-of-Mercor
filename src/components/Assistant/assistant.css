@@ -52,3 +52,11 @@
   color: #808080;
   font-family: 'Poppins', sans-serif;
 }
+
+@media screen and (max-width: 1200px) {
+  .assistant {
+    margin-right: 0;
+    max-width: 700px;
+    max-height: 900px;
+  }
+}

@@ -121,3 +121,34 @@
     transform: scale(1);
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .workflow {
+    flex-direction: column;
+    margin-top: 50px;
+    height: 200vh;
+  }
+
+  .workflow__left {
+    flex: 1;
+  }
+
+  .workflow__right {
+    flex: 1;
+    min-width: 600px;
+  }
+
+  .workflow__right-buttons {
+    width: 90%;
+    margin-right: 0;
+  }
+
+  .workflow__left-heading {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .workflow__left-title {
+    font-size: 60px;
+    line-height: 68px;
+  }
+}

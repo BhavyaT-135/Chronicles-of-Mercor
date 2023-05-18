@@ -34,9 +34,13 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 1200px) {
   .content-text {
     font-size: 40px;
     padding: 30px;
+  }
+
+  .content {
+    width: 80%;
   }
 }
