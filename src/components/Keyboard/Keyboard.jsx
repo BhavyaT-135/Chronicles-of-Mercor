@@ -1,11 +1,9 @@
 import React, {useState, useEffect} from 'react'
 import './keyboard.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Keyboard = () => {
 
   const [counter, setCounter] = useState(1);
-  const [rotateCounter, setRotateCounter] = useState(1);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -14,10 +12,6 @@ const Keyboard = () => {
         if (prevCounter === 2) return 3;
         return 1;
       });
-      setRotateCounter((prevRotateCounter) => {
-        if (prevRotateCounter === 1) return 2;
-        return 1;
-      })
     }, 3000);
 
     return () => {
@@ -27,6 +21,28 @@ const Keyboard = () => {
 
   return (
     <div className='keyboard'>
+      <div className='keyboard__blocks'>
+        <div className='keyboard__blocks-container'>
+          <div className='keyboard__blocks__block'></div>
+          <div className='keyboard__blocks__block'></div>
+          <div className='keyboard__blocks__block'></div>
+          <div className='keyboard__blocks__block'></div>
+          <div className='keyboard__blocks__block'></div>
+          <div className='keyboard__blocks__block'></div>
+          <div className='keyboard__blocks__block'></div>
+          <div className='keyboard__blocks__block'></div>
+          <div className='keyboard__blocks__block'></div>
+          <div className='keyboard__blocks__block'></div>
+          <div className='keyboard__blocks__block'></div>
+          <div className='keyboard__blocks__block'></div>
+          <div className='keyboard__blocks__block'></div>
+          <div className='keyboard__blocks__block'></div>
+          <div className='keyboard__blocks__block'></div>
+          <div className='keyboard__blocks__block'></div>
+          <div className='keyboard__blocks__block'></div>
+          <div className='keyboard__blocks__block'></div>
+        </div>
+      </div>
       <div className='keyboard__top'>
         {counter === 1 && (<div className='keyboard__top-block'>
           <div className='keyboard__top-block__heading scale-up-top'>

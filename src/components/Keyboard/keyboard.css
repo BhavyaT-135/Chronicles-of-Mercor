@@ -1,4 +1,5 @@
 .keyboard {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-right: 20%;
@@ -7,6 +8,31 @@
   border: none;
   border-radius: 25px;
   background-color: #101010;
+}
+
+.keyboard__blocks {
+  position: absolute;
+  top: 5%;
+  width: 100%;
+  height: 45%;
+}
+
+.keyboard__blocks-container {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.keyboard__blocks__block {
+  width: 14.5%;
+  height: 0;
+  padding-bottom: 14.5%;
+  border-radius: 20%;
+  background-color: #121212;
 }
 
 .keyboard__top {
@@ -99,6 +125,7 @@
 }
 
 .keyboard__bottom-heading {
+  z-index: 10;
   width: 63%;
   text-align: center;
   margin-top: 5%;
@@ -110,6 +137,7 @@
 }
 
 .keyboard__bottom-text {
+  z-index: 10;
   width: 80%;
   text-align: center;
   margin-top: 5%;
