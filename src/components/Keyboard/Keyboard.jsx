@@ -4,39 +4,47 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Keyboard = () => {
 
-  // const [counter, setCounter] = useState(1);
-  // const [rotateCounter, setRotateCounter] = useState(1);
+  const [counter, setCounter] = useState(1);
+  const [rotateCounter, setRotateCounter] = useState(1);
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setCounter((prevCounter) => {
-  //       if (prevCounter === 1) return 2;
-  //       if (prevCounter === 2) return 3;
-  //       return 1;
-  //     });
-  //     setRotateCounter((prevRotateCounter) => {
-  //       if (prevRotateCounter === 1) return 2;
-  //       return 1;
-  //     })
-  //   }, 3000);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCounter((prevCounter) => {
+        if (prevCounter === 1) return 2;
+        if (prevCounter === 2) return 3;
+        return 1;
+      });
+      setRotateCounter((prevRotateCounter) => {
+        if (prevRotateCounter === 1) return 2;
+        return 1;
+      })
+    }, 3000);
 
-  //   return () => {
-  //     clearInterval(interval);
-  //   };
-  // }, []);
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
 
   return (
     <div className='keyboard'>
       <div className='keyboard__top'>
-        (<div className='keyboard__top-block'>
+        {counter === 1 && (<div className='keyboard__top-block'>
           <div className='keyboard__top-block__heading scale-up-top'>
-            Create a new block
+            Tidy up and organize all blocks
           </div>
-          <div className='keyboard__top-block__square scale-up-center'>
-            /
+          <div className='keyboard__top-block__squaresShift slide-left'>
+            <div className='keyboard__top-block__squareShift scale-up-center'>
+              Shift
+            </div>
+            <div className='keyboard__top-block__square scale-up-center'>
+              ⌘
+            </div>
+            <div className='keyboard__top-block__square scale-up-center'>
+              T
+            </div>
           </div>
-        </div>)
-        {/* (<div className='keyboard__top-block'>
+        </div>)}
+        {counter === 2 &&(<div className='keyboard__top-block'>
           <div className='keyboard__top-block__heading scale-up-top'>
             Select your blocks
           </div>
@@ -54,23 +62,15 @@ const Keyboard = () => {
               3
             </div>
           </div>
-        </div>) */}
-        {/* (<div className='keyboard__top-block'>
+        </div>)}
+        {counter === 3 &&(<div className='keyboard__top-block'>
           <div className='keyboard__top-block__heading scale-up-top'>
-            Tidy up and organize all blocks
+            Create a new block
           </div>
-          <div className='keyboard__top-block__squaresShift slide-left'>
-            <div className='keyboard__top-block__squareShift scale-up-center'>
-              Shift
-            </div>
-            <div className='keyboard__top-block__square scale-up-center'>
-              ⌘
-            </div>
-            <div className='keyboard__top-block__square scale-up-center'>
-              T
-            </div>
+          <div className='keyboard__top-block__square scale-up-center'>
+            /
           </div>
-        </div>) */}
+        </div>)}
       </div>
       <div className='keyboard__bottom'>
         <div className='keyboard__bottom-heading'>
